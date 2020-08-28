@@ -17,5 +17,9 @@ customer1 = customer1_preprocessor.data_prepared
 customer2_preprocessor = CustomerPreprocessor(path_to_data=PATH_TO_CONSUMER_2)
 customer2 = customer2_preprocessor.data_prepared
 
-customer2.resample("h").plot(y="leistung_kw")
+customer1_in_hours = customer1.resample("d").mean()
+customer1_in_hours.plot(y="leistung_kw")
 plt.show()
+
+
+customer2["leistung_kw"].idxmax()
