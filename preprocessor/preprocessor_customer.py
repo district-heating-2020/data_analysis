@@ -68,5 +68,7 @@ class CustomerPreprocessor:
 
     @classmethod
     def _set_datetimeindex(cls, df):
-        return df.set_index("timestamp")
+        df.set_index("timestamp", inplace=True)
+        df.index = pd.to_datetime(df.index)
+        return df
 
