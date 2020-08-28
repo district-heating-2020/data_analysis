@@ -34,7 +34,9 @@ Die Wärmequelle kann z.B. eine Wärmepumpe, Kehrrichtverbrennungsanlage, oder e
 In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter private Haushalte, Industrie, Schulhaus, Gemeindehaus)
 
 [Bild Netzplan]
+
 Im Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
+
 Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um die Raumtemperatur auf 20°C zu heizen wenn die Aussentemperatur 8°C beträgt.
 
 [Bild Heizzentrale]
@@ -45,16 +47,15 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 
 Daten
 -----
-Gelb markiert = Wärmezählerdaten (reine Messdaten)
-
-Weiss markiert = Leitsystemdaten (zur Steuerung)
-
-Grau markiert = Soll-daten vom Leistsystem (zur Steuerung)
+* Gelb markiert = Wärmezählerdaten (reine Messdaten)
+* Weiss markiert = Leitsystemdaten (zur Steuerung)
+* Grau markiert = Soll-daten vom Leistsystem (zur Steuerung)
 
 Die Zieltemperraturen (Soll Gesamtzentrale z.B. 85.0°C, Soll Wärmekessel z.B. 93.1°C) werden gerechnet anhand der momentanen Aussentemperatur. 
 Wärmekessel: auch gerechnet anhand der Aussentemperatur
 
-
+Systemsteuerung
+------------------------
 
 Zur Zeit steuert das Leitsystem die Kessel und den Speicher aufgrund der momentanen Aussentemperaturen. Er "weiss" sozusagen nicht, was in einigen Stunden passiert. 
 
@@ -68,6 +69,9 @@ Faktoren hinter den Wärme-Bedarf
 * Wind (kühlt ab) --> ?
 * Luftfeuchtigkeit --> ?
 * Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung.  
+
+Kunden
+----------
 
 [Bilder Beispiele Kunden]
 
