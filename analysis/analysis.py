@@ -15,3 +15,4 @@ customer1 = customer1_preprocessor.data_prepared
 
 customer2_preprocessor = CustomerPreprocessor(path_to_data=PATH_TO_CONSUMER_2)
 customer2 = customer2_preprocessor.data_prepared
+

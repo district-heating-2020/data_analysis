@@ -33,16 +33,18 @@ class CustomerPreprocessor:
                         'WZ Duchfluss(l/h)',
                         'WZ Rücklauftemp.(°C)',
                         'WZ Vorlauftemp.(°C)',
+                        'WZ Fehleranzeige',
                         'WZ Spreizung(°C)',
                         'Ventilstellung Gesamt(%)']
 
         columns_values = ["timestamp",
                           "aussentemperatur",
-                          "primär_temperatur",
+                          "primär_temperatur_rl",
                           "sekundär_temperatur_vl",
                           "sekundär_temperatur_rl",
                           "sekundär_temperatur_vl_soll",
                           "maximale_rücklauftemperature",
+                          "temperatur_soll",
                           "status_pump",
                           "status_kreis",
                           "status_mischer",
@@ -56,12 +58,13 @@ class CustomerPreprocessor:
                           "durchfluss_liter_per_hour",
                           "rücklauftemperatur",
                           "vorlauftemperatur",
-                          "fehleranzeige"
+                          "fehleranzeige",
                           "spreizung_celsius",
                           "ventilstellung_gesamt"]
 
         columns_dict = dict(zip(columns_keys, columns_values))
-        return df.rename(columns=columns_dict)
+
+        return df.rename(columns_dict, axis=1)
 
     @classmethod
     def _set_datetimeindex(cls, df):
