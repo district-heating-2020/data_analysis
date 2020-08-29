@@ -11,10 +11,10 @@ Die AEW als Betreiber von mehr als 80 Fernwärmeverbünden sieht durch diese Cha
 **Ziele:**
 
 1. Energieverbrauch von Fernwärme-Zentralen allgemein minimieren (Primärenergieeinsatz). 
-
 2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
 
 **Wie?** 
+
 - Lastprognosen auf Basis von historischen Verbrauchsdaten, Wetterdaten, etc projizieren.
 - Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
 
@@ -28,10 +28,10 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 **Goals:**
 
 1. Minimize the energy consumption of disctrict heating plants (primary energy use) 
-
 2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
 
 **How?** 
+
 - Load forecasts based on historical consumption data, weather data, etc.
 - Performance scheduling within the network by exploiting the thermal mass of the supplied objects or using distributed smaller intermediate storage facilities.
 
@@ -79,6 +79,13 @@ Detailliert:
 
 ## Weitere Schritte - Next Steps
 
+#### Integration ins Leitsystem
+
+- Recommender: Speicher jetzt entladen oder füllen?
+- Recommender: Wie viel Wärme soll der Holzkessel jetzt produzieren? 
+- Recommender: Soll der Ölkessel (Nr. 6) "abgeworfen" werden? 
+
+
 #### Weitere potentielle Datenquellen
 - Kalenderdaten (Feiertage, Ferienzeit, …)
 - Kenndaten/Modelldaten Fernwärmesysteme
@@ -86,10 +93,6 @@ Detailliert:
 - [HSLU Programm "Thermische Netze"](https://www.energieschweiz.ch/page/de-ch/thermische-netze): seems relevant, but is out of date
 - [Statistics from Germany](https://de.statista.com/statistik/daten/studie/166824/umfrage/verbrauch-von-fernwaerme-in-deutschland/)
 
-#### Integration ins Leitsystem
-Recommender: Speicher jetzt entladen oder füllen?
-Recommender: Wie viel Wärme soll der Holzkessel jetzt produzieren? 
-Recommender: Soll der Ölkessel (Nr. 6) "abgeworfen" werden? 
 
 
 ## Prototyp Dorf-Fernwärmeverbund
