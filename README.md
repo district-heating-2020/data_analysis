@@ -42,6 +42,8 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 
 [Bild Heizzentrale]
 
+![Heizzentrale](/doc/Heat-station.png?raw=true)
+
 * Der Holzkessel produziert in der Regel die Wärme (kann auf ca 30%-100% seiner Kapazität laufen oder ausgeschaltet sein)
 * Die zwei Gaskessel werden bei Bedarf eingeschlatet um eine Spitzenlast zu decken. Sie dienen auch als Redundanz, sollte der Holzkessel ausfallen. 
 * Der Speicher bekommt unten abgekühltes Wasser zurück aus dem Netz, oben warmes Wasser aus den Wärmeerzeugern. Er kann je nach Bedarf Wärme speichern oder abgeben. Er hat allerdings keine unbegrenzte Kapazität (also z.B muss der Holzkessel runterfahren, bevor der Speicher voll wird). 
@@ -75,6 +77,24 @@ Kunden
 ----------
 
 [Bilder Beispiele Kunden]
+
+Kunde Nr 1: Gewerbe
+
+Kunde Nr 2: Schulhaus
+
+Kunde Nr 3: Schulhaus
+
+Kunde Nr 4: Gemeindehaus
+
+Kunde Nr 5: Turnhalle / Mehrzweckhalle
+
+Kunde Nr 6: Gewerbe (Betrieb)
+
+Kunde Nr 7: Gewerbe (Büro)
+
+Kunde Nr 8: Gewerbe
+
+Kunde Nr 9: Gewerbe
 
 Wärmetauscher = Schnittstelle zwischen Netz und Kunden-Gebäude. Beide sind geschlossene Kreise
 
