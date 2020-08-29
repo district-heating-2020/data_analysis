@@ -131,7 +131,7 @@ Beispielsweise kann es in der Übergangszeit zu suboptimalen Spitzen kommen: am 
 ![Wärmeübergabestation (gross)](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/W%C3%A4rme%C3%BCbergabestation_gross_400px.jpg?raw=true)
 ![Wärmeübergabestation (klein)](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/W%C3%A4rme%C3%BCbergabestation_klein_400px.jpg?raw=true)
 
-Von links nach rechts: Holzkessel, Speicher, 
+Von links nach rechts: Holzkessel, Speicher, grosse Wärmeübergabestation, kleine Wärmeübergabestation
 
 #### Kunden
 
