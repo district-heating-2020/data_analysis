@@ -51,19 +51,19 @@ Detailliert:
 
 *1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte.*
 
-TO DO
+--> TO DO
 
 *2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann.* 
 
-IN PROGRESS: Ansätze und erste Prognosen DONE, Optimierung und Komplettierung relevante Input-Variablen TO DO
+--> IN PROGRESS: Ansätze und erste Prognosen DONE, Optimierung und Komplettierung relevante Input-Variablen TO DO
 
 *3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle*
 
-IN PROGRESS
+--> IN PROGRESS
 
 *4. Als Data Scientist will ich die fixe Betriebszeiten von Kunden-Boilers aus Verbrauchsdaten erkennen, damit ich diesen Input der Leistungs-Prognose hinzufügen kann*
 
-DONE:  Included in load forecast
+--> DONE:  Included in load forecast
 
 
 #### Results
