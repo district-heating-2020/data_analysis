@@ -1,23 +1,21 @@
 # Optimierung von Fernwärmeverbünden
 
-## Ziel - Goal
-[DE] 
+## Herausforderung - Challenge
 
-1. Energieverbrauch von Fernwärme-Zentralen allgemein minimieren (Primärenergieeinsatz). 
-2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
-
-[EN] 
-
-1. Minimize the energy consumption of disctrict heating plants (primary energy use) 
-2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
-
-## Hintergrund - Big Picture:
-
-[DE] 
+[DE]
 
 Heizen macht über 40% des schweizerischen Energie-Endverbrauchs aus. Fernwärmeverbünde ermöglichen das Ausrollen von Wärme auf Basis erneuerbarer Energien; sie sind ein wesentlicher Bestandteil der Energiestrategie 2050. 
 
 Die AEW als Betreiber von mehr als 80 Fernwärmeverbünden sieht durch diese Challenge eine sehr gute Möglichkeit der Replizierbarkeit.
+
+**Ziele:**
+1. Energieverbrauch von Fernwärme-Zentralen allgemein minimieren (Primärenergieeinsatz). 
+2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
+
+**Wie?** 
+- Lastprognosen auf Basis von historischen Verbrauchsdaten, Wetterdaten, etc projizieren.
+- Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
+
 
 [EN] 
 
@@ -25,19 +23,32 @@ Heating accounts for more than 40% of Switzerland’s final energy consumption. 
 
 AEW as operator of more than 80 district heating networks sees a very good opportunity for replicability for this challenge.
 
-## Idee - Idea
-[DE]
+**Goals:**
+1. Minimize the energy consumption of disctrict heating plants (primary energy use) 
+2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
 
-- Lastprognosen auf Basis von historischen Verbrauchsdaten, Wetterdaten, etc projizieren.
-- Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
-
-[EN]
-
-
+**How?** 
 - Load forecasts based on historical consumption data, weather data, etc.
 - Performance scheduling within the network by exploiting the thermal mass of the supplied objects or using distributed smaller intermediate storage facilities.
 
-## Daten - Data
+
+## Hack Days 2020 - 28.-29. August 2020
+
+#### Anforderungen
+
+Allgemein: 
+- **Für wen**: Steuerungssystem einer Fernwärmeanlage, die von einem erneuerbaren Energiequelle (z.B. Holzkessel) betrieben wird, sowie zusätzlich bei Bedarf einen oder mehrere fossile Kessel (z.B. Gas). 
+- **Was**: Eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, abhängig von der meteoroligischer Prognose für die Aussentemperatur
+und weiteren relevanten Parametern". 
+- **Wieso**: Damit das Steuerungssystem 1) möglichst wenig Energie insgesamt verbraucht, und 2) auf den Einsatz der fossilen Quellen verzichten kann. Das Ziel ist, dass möglichst nur das Zusammenspiel des Holzkessels und des Speichers (eine Art grosser Boiler) benötigt werden, um die Wärmebedürfnisse zu decken
+
+Detailliert: 
+1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte. 
+2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann. 
+3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle
+4. Als Data Scientist will ich die fixe Betriebszeiten von Kunden-Boilers aus Verbrauchsdaten erkennen, damit ich diesen Input der Leistungs-Prognose hinzufügen kann
+
+#### Datenquellen - Data sources
 
 [DE]
 
@@ -49,14 +60,7 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 - [Production and usage data of an existing distric heating network for 9 client buildings](https://github.com/district-heating-2020/data_analysis/tree/master/data/energy): 2 years (2018-2019), every 5 minutes 
 - [Historical weather data for the area](https://github.com/district-heating-2020/data_analysis/tree/master/data/weather)
 
-### Weitere potentielle Datenquellen
-- Kalenderdaten (Feiertage, Ferienzeit, …)
-- Kenndaten/Modelldaten Fernwärmesysteme
-- Geodaten (Fernwärmenetz, Wärmebedarf, Wärmequelle, …)
-- [HSLU Programm "Thermische Netze"](https://www.energieschweiz.ch/page/de-ch/thermische-netze): seems relevant, but is out of date
-- [Statistics from Germany](https://de.statista.com/statistik/daten/studie/166824/umfrage/verbrauch-von-fernwaerme-in-deutschland/)
-
-## Team
+#### Team
 
 - Toni Wietlisbach, AEW --> Fernwärme
 - [Andy Gubser](https://github.com/andygubser) --> Data science
@@ -64,37 +68,27 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 - Wolfram Willuhn
 - [Emilie Boillat](https://github.com/boillat) --> Dokumentation
 
-Dieses Projekt wurde im Rahmen der [Energy Hack Days 2020](https://hack.opendata.ch/event/31) lanciert. 
+[Energy Hack Days 2020](https://hack.opendata.ch/event/31)
 
-## Anforderungen
 
-### Allgemein
+## Weitere Schritte - Next Steps
 
-**Für wen**: Steuerungssystem einer Fernwärmeanlage, die von einem erneuerbaren Energiequelle (z.B. Holzkessel) betrieben wird, sowie zusätzlich bei Bedarf einen oder mehrere fossile Kessel (z.B. Gas). 
+#### Weitere potentielle Datenquellen
+- Kalenderdaten (Feiertage, Ferienzeit, …)
+- Kenndaten/Modelldaten Fernwärmesysteme
+- Geodaten (Fernwärmenetz, Wärmebedarf, Wärmequelle, …)
+- [HSLU Programm "Thermische Netze"](https://www.energieschweiz.ch/page/de-ch/thermische-netze): seems relevant, but is out of date
+- [Statistics from Germany](https://de.statista.com/statistik/daten/studie/166824/umfrage/verbrauch-von-fernwaerme-in-deutschland/)
 
-**Was**: Eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, abhängig von der meteoroligischer Prognose für die Aussentemperatur
-und weiteren relevanten Parametern". 
-
-**Wieso**: Damit das Steuerungssystem 1) möglichst wenig Energie insgesamt verbraucht, und 2) auf den Einsatz der fossilen Quellen verzichten kann. Das Ziel ist, dass möglichst nur das Zusammenspiel des Holzkessels und des Speichers (eine Art grosser Boiler) benötigt werden, um die Wärmebedürfnisse zu decken
-
-### Detailliert 
-
-1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte. 
-2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann. 
-3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle
-4. Als Data Scientist will ich die fixe Betriebszeiten von Kunden-Boilers aus Verbrauchsdaten erkennen, damit ich diesen Input der Leistungs-Prognose hinzufügen kann
-
-### Weitere Schritte: Anforderungen für die Integration ins Leisystem
+#### Integration ins Leitsystem
 Recommender: Speicher jetzt entladen oder füllen?
 Recommender: Wie viel Wärme soll der Holzkessel jetzt produzieren? 
 Recommender: Soll der Ölkessel (Nr. 6) "abgeworfen" werden? 
 
 
-## Über Fernwärmeverbunde
+## Prototyp Dorf-Fernwärmeverbund
 
-Ein Wärmeerzeuger kann an wenige bis 1000 Gebäude Wärme verteilen, je nach Grösse der Anlage. 
-
-Die Wärmequelle kann z.B. eine Wärmepumpe, Kehrrichtverbrennungsanlage, oder ein Holzkessel sein. 
+Ein Fernwärmeerzeuger kann an wenige bis zu 1000 Gebäude Wärme verteilen, je nach Grösse der Anlage. Die Wärmequelle kann z.B. eine Wärmepumpe, Kehrrichtverbrennungsanlage, oder ein Holzkessel sein. 
 
 In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter private Haushalte, Industrie, Schulhaus, Gemeindehaus)
 
