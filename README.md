@@ -100,11 +100,7 @@ Ein Fernwärmeerzeuger kann an wenige bis zu 1000 Gebäude Wärme verteilen, je 
 
 In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter Gewerbe, Schulhaus, Gemeindehaus).
 
-![Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
-
-Auf dem Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
-
-Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um die Raumtemperatur auf 20°C zu heizen wenn die Aussentemperatur 8°C beträgt.
+![Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
 
 #### Heizzentrale
 
@@ -140,25 +136,21 @@ Beispielsweise kann es in der Übergangszeit zu suboptimalen Spitzen kommen: am 
 
 #### Kunden
 
-![Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
+![Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
 
-Kunde Nr 1: Gewerbe
+Auf dem Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
 
-Kunde Nr 2: Schulhaus
+Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um die Raumtemperatur auf 20°C zu heizen wenn die Aussentemperatur 8°C beträgt.
 
-Kunde Nr 3: Schulhaus
-
-Kunde Nr 4: Gemeindehaus
-
-Kunde Nr 5: Turnhalle / Mehrzweckhalle
-
-Kunde Nr 6: Gewerbe (Betrieb)
-
-Kunde Nr 7: Gewerbe (Büro)
-
-Kunde Nr 8: Gewerbe
-
-Kunde Nr 9: Gewerbe
+- Kunde Nr 1: Gewerbe
+- Kunde Nr 2: Schulhaus
+- Kunde Nr 3: Schulhaus
+- Kunde Nr 4: Gemeindehaus
+- Kunde Nr 5: Turnhalle / Mehrzweckhalle
+- Kunde Nr 6: Gewerbe (Betrieb)
+- Kunde Nr 7: Gewerbe (Büro)
+- Kunde Nr 8: Gewerbe
+- Kunde Nr 9: Gewerbe
 
 Wärmetauscher = Schnittstelle zwischen Netz und Kunden-Gebäude. Beide sind geschlossene Kreise
 
