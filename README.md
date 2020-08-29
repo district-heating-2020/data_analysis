@@ -100,7 +100,7 @@ Ein Fernwärmeerzeuger kann an wenige bis zu 1000 Gebäude Wärme verteilen, je 
 
 In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter Gewerbe, Schulhaus, Gemeindehaus).
 
-[Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
+![Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
 
 Auf dem Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
 
@@ -140,7 +140,7 @@ Beispielsweise kann es in der Übergangszeit zu suboptimalen Spitzen kommen: am 
 
 #### Kunden
 
-[Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
+![Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
 
 Kunde Nr 1: Gewerbe
 
