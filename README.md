@@ -67,7 +67,7 @@ Dieses Projekt wurde im Rahmen der [Energy Hack Days 2020](https://hack.opendata
 
 ## Anforderungen
 
-### Allgemeine Anforderung
+### Allgemein
 
 **Für wen**: Steuerungssystem einer Fernwärmeanlage, die von einem erneuerbaren Energiequelle (z.B. Holzkessel) betrieben wird, sowie zusätzlich bei Bedarf einen oder mehrere fossile Kessel (z.B. Gas). 
 
@@ -76,7 +76,7 @@ und weiteren relevanten Parametern".
 
 **Wieso**: Damit das Steuerungssystem 1) möglichst wenig Energie insgesamt verbraucht, und 2) auf den Einsatz der fossilen Quellen verzichten kann. Das Ziel ist, dass möglichst nur das Zusammenspiel des Holzkessels und des Speichers (eine Art grosser Boiler) benötigt werden, um die Wärmebedürfnisse zu decken
 
-### Detaillierte Anforderungen 
+### Detailliert 
 
 1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte. 
 2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann. 
@@ -105,7 +105,7 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 
 [Bild Heizzentrale]
 
-![Heizzentrale](/doc/Heat-station.png?raw=true)
+![Heizzentrale](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Heat-station.png?raw=true)
 
 * Der Holzkessel produziert in der Regel die Wärme (kann auf ca 30%-100% seiner Kapazität laufen oder ausgeschaltet sein)
 * Die zwei Gaskessel werden bei Bedarf eingeschlatet um eine Spitzenlast zu decken. Sie dienen auch als Redundanz, sollte der Holzkessel ausfallen. 
