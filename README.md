@@ -3,25 +3,25 @@
 ## Ziel - Goal
 [DE] 
 
-1. Energieverbrauch von Fernwärmeanlagen allgemein minimieren (Primärenergieeinsatz). 
+1. Energieverbrauch von Fernwärme-Zentralen allgemein minimieren (Primärenergieeinsatz). 
 2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
 
 [EN] 
 
-1. Minimize the energy consumption of disctrict heating netowrks (primary energy use)
+1. Minimize the energy consumption of disctrict heating plants (primary energy use) 
 2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
 
 ## Hintergrund - Big Picture:
 
 [DE] 
 
-Fernwärmeverbünde auf Basis erneuerbarer Energien sind ein wesentlicher Bestandteil der Energiestrategie 2050. Ressourceneffizienz ist ein Hauptthema und soll im Rahmen der Optimierung bestehender Fernwärmeverbünde mittels Datenanalyse im Mittelpunkt stehen.
+Heizen macht über 40% des schweizerischen Energie-Endverbrauchs aus. Fernwärmeverbünde ermöglichen das Ausrollen von Wärme auf Basis erneuerbarer Energien; sie sind ein wesentlicher Bestandteil der Energiestrategie 2050. 
 
 Die AEW als Betreiber von mehr als 80 Fernwärmeverbünden sieht durch diese Challenge eine sehr gute Möglichkeit der Replizierbarkeit.
 
 [EN] 
 
-District heating networks based on renewable energies are an essential part of the Energy Strategy 2050. Resource efficiency is a main goal and should be the focus of the optimisation of existing district heating networks through data analysis.
+Heating accounts for more than 40% of Switzerland’s final energy consumption. District heating networks facilitate deploying renewable heating on scale and are an essential part of Switzerland's Energy Strategy 2050. 
 
 AEW as operator of more than 80 district heating networks sees a very good opportunity for replicability for this challenge.
 
@@ -32,6 +32,7 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 - Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
 
 [EN]
+
 
 - Load forecasts based on historical consumption data, weather data, etc.
 - Performance scheduling within the network by exploiting the thermal mass of the supplied objects or using distributed smaller intermediate storage facilities.
