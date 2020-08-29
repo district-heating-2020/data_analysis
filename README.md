@@ -94,20 +94,19 @@ Detailliert:
 - [Statistics from Germany](https://de.statista.com/statistik/daten/studie/166824/umfrage/verbrauch-von-fernwaerme-in-deutschland/)
 
 
-
-## Prototyp Dorf-Fernwärmeverbund
+## Beschreibung Beispiel-Fernwärmeverbund
 
 Ein Fernwärmeerzeuger kann an wenige bis zu 1000 Gebäude Wärme verteilen, je nach Grösse der Anlage. Die Wärmequelle kann z.B. eine Wärmepumpe, Kehrrichtverbrennungsanlage, oder ein Holzkessel sein. 
 
-In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter private Haushalte, Industrie, Schulhaus, Gemeindehaus)
+In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter Gewerbe, Schulhaus, Gemeindehaus).
 
-[Bild Netzplan]
+[Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
 
-Im Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
+Auf dem Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
 
 Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um die Raumtemperatur auf 20°C zu heizen wenn die Aussentemperatur 8°C beträgt.
 
-[Bild Heizzentrale]
+#### Heizzentrale
 
 ![Heizzentrale](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Heat-station.png?raw=true)
 
@@ -115,8 +114,8 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 * Die zwei Gaskessel werden bei Bedarf eingeschlatet um eine Spitzenlast zu decken. Sie dienen auch als Redundanz, sollte der Holzkessel ausfallen. 
 * Der Speicher bekommt unten abgekühltes Wasser zurück aus dem Netz, oben warmes Wasser aus den Wärmeerzeugern. Er kann je nach Bedarf Wärme speichern oder abgeben. Er hat allerdings keine unbegrenzte Kapazität (also z.B muss der Holzkessel runterfahren, bevor der Speicher voll wird). 
 
-Daten
------
+**Daten:**
+
 * Gelb markiert = Wärmezählerdaten (reine Messdaten)
 * Weiss markiert = Leitsystemdaten (zur Steuerung)
 * Grau markiert = Soll-daten vom Leistsystem (zur Steuerung)
@@ -124,15 +123,14 @@ Daten
 Die Zieltemperraturen (Soll Gesamtzentrale z.B. 85.0°C, Soll Wärmekessel z.B. 93.1°C) werden gerechnet anhand der momentanen Aussentemperatur. 
 Wärmekessel: auch gerechnet anhand der Aussentemperatur
 
-Systemsteuerung
-------------------------
+**Systemsteuerung:**
 
 Zur Zeit steuert das Leitsystem die Kessel und den Speicher aufgrund der momentanen Aussentemperaturen. Er "weiss" sozusagen nicht, was in einigen Stunden passiert. 
 
 Beispielsweise kann es in der Übergangszeit zu suboptimalen Spitzen kommen: am Nachmittag scheint die Sonne und der Holzkessel ist ausgeschaltet; der Speicher reicht nicht mehr um die kalte Nacht zu decken. Der Gaskessel wird eingeschlatet, obwohl der Holzkessel alleine hätte locker reichen können, wenn nachmittags mehr gespeichert worden wäre. 
 
-Faktoren hinter den Wärme-Bedarf
--------
+**Faktoren hinter den Wärme-Bedarf**
+
 * Aussentemperatur
 * Zeiten, an denen die individuellen Boiler der Kunden angestellt werden. Normalerweise regelmässig. Kann man bedingt beinflussen mit Fernsteuerung. 
 * Globale Strahlung (Erwärmung durch Fenster) --> ?
@@ -140,10 +138,9 @@ Faktoren hinter den Wärme-Bedarf
 * Luftfeuchtigkeit --> ?
 * Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung.  
 
-Kunden
-----------
+#### Kunden
 
-[Bilder Beispiele Kunden]
+[Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
 
 Kunde Nr 1: Gewerbe
 
