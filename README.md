@@ -9,7 +9,9 @@ Heizen macht über 40% des schweizerischen Energie-Endverbrauchs aus. Fernwärme
 Die AEW als Betreiber von mehr als 80 Fernwärmeverbünden sieht durch diese Challenge eine sehr gute Möglichkeit der Replizierbarkeit.
 
 **Ziele:**
+
 1. Energieverbrauch von Fernwärme-Zentralen allgemein minimieren (Primärenergieeinsatz). 
+
 2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
 
 **Wie?** 
@@ -24,7 +26,9 @@ Heating accounts for more than 40% of Switzerland’s final energy consumption. 
 AEW as operator of more than 80 district heating networks sees a very good opportunity for replicability for this challenge.
 
 **Goals:**
+
 1. Minimize the energy consumption of disctrict heating plants (primary energy use) 
+
 2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
 
 **How?** 
@@ -37,12 +41,14 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 #### Anforderungen
 
 Allgemein: 
+
 - **Für wen**: Steuerungssystem einer Fernwärmeanlage, die von einem erneuerbaren Energiequelle (z.B. Holzkessel) betrieben wird, sowie zusätzlich bei Bedarf einen oder mehrere fossile Kessel (z.B. Gas). 
 - **Was**: Eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, abhängig von der meteoroligischer Prognose für die Aussentemperatur
 und weiteren relevanten Parametern". 
 - **Wieso**: Damit das Steuerungssystem 1) möglichst wenig Energie insgesamt verbraucht, und 2) auf den Einsatz der fossilen Quellen verzichten kann. Das Ziel ist, dass möglichst nur das Zusammenspiel des Holzkessels und des Speichers (eine Art grosser Boiler) benötigt werden, um die Wärmebedürfnisse zu decken
 
 Detailliert: 
+
 1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte. 
 2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann. 
 3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle
