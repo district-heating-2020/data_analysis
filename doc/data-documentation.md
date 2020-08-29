@@ -24,7 +24,7 @@ Variablen:
 - WZ Durchfluss(l/h)
 - WZ Rücklauftemp.(°C)
 - WZ Vorlauftemp.(°C)
-- WZ Spreizung(°C)
+- WZ Spreizung(°C): Temperaturunterschied zwischen den Fluss beim Eingang bzw. Ausgang. Diesen Wert probiert man möglichst gross zu halten.
 
 ![Heizzentrale](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/Heat-station.png?raw=true)
 
@@ -32,6 +32,8 @@ Variablen:
 ## Reguläre Kundenschnittstellen (Kunden 1-5 und 7-8)
 
 Für Schemas der einzelnen Kundeninstallationen, siehe die [PPTX Präsentation](https://github.com/district-heating-2020/data_analysis/blob/master/doc/district_heating_challenge_background_information.pptx)
+
+Auf den Schemas sieht man jeweils ein Wärmetauscher = Schnittstelle zwischen Netz und Kunden-Gebäude. Beide Netze sind geschlossene Kreise, darum braucht es einen Wärmetäuchser zwischen den beiden. 
 
 Dateien (eine pro Kunde):
 
@@ -64,7 +66,7 @@ Variablen:
 - WZ Duchfluss(l/h)
 - WZ Rücklauftemp.(°C)
 - WZ Vorlauftemp.(°C)
-- WZ Spreizung(°C)
+- WZ Spreizung(°C): Temperaturunterschied zwischen den Fluss beim Eingang bzw. Ausgang. Diesen Wert probiert man möglichst gross zu halten.
 - Ventilstellung Gesamt(%)
 
 
@@ -95,7 +97,7 @@ Vairablen:
 - WZ Duchfluss(l/h)
 - WZ Rücklauftemp.(°C)
 - WZ Vorlauftemp.(°C)
-- WZ Spreizung(°C): Messwert Temperaturunterschied zwischen dem aussgehenden und dem eingehenden Wasser
+- WZ Spreizung(°C): Temperaturunterschied zwischen den Fluss beim Eingang bzw. Ausgang. Diesen Wert probiert man möglichst gross zu halten.
 - Ventilstellung Gesamt(%)
 - Ventilstellung gemittelt(%)
 
