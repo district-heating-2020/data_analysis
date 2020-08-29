@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-class CustomerPreprocessor:
+class ConsumerPreprocessor:
     """ input: the raw dataframe of energy,
         output: preprocessed dataframe with datetimeindex """
 
@@ -70,5 +70,7 @@ class CustomerPreprocessor:
     def _set_datetimeindex(cls, df):
         df.set_index("timestamp", inplace=True)
         df.index = pd.to_datetime(df.index)
+        df["hour"], df["month"], df["weekday"] = df.index.hour, df.index.month, df.index.weekday
+        # weekday: monday 0, sunday 6
         return df
 

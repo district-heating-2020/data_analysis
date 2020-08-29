@@ -10,7 +10,8 @@ class WeatherPreprocessor:
         df_dropped_rows = self.df_raw.drop(0)
         df_renamed_columns = self._rename_columns(df_dropped_rows)
         df_datetimeindexed = self._set_datetimeindex(df_renamed_columns)
-        self.data_prepared = df_datetimeindexed.dropna(how="all")
+        df_numeric = self._convert_to_numeric(df_datetimeindexed)
+        self.data_prepared = df_numeric.dropna(how="all")
 
     @classmethod
     def _rename_columns(cls, df):
@@ -27,3 +28,7 @@ class WeatherPreprocessor:
     @classmethod
     def _set_datetimeindex(cls, df):
         return df.set_index("timestamp")
+
+    @classmethod
+    def _convert_to_numeric(cls, df):
+        return df.apply(pd.to_numeric, errors="ignore")
