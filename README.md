@@ -1,28 +1,22 @@
 # Optimierung von Fernwärmeverbünden
 
-Dieses Projekt wurde im Rahmen der [Energy Hack Days 2020](https://hack.opendata.ch/event/31) lanciert. 
-
-Team: 
-* Toni Wietlisbach, AEW --> Fernwärme
-* [Andy Gubser](https://github.com/andygubser) --> Data science
-* [Martin Horeni](https://github.com/Martin1877) --> Data Science
-* Wolfram Willuhn
-* [Emilie Boillat](https://github.com/boillat) --> Dokumentation
-
 ## Ziel - Goal
 [DE] 
-1) Energieverbrauch von Fernwärmeanlagen allgemein minimieren (Primärenergieeinsatz). 
-2) Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
+
+1. Energieverbrauch von Fernwärmeanlagen allgemein minimieren (Primärenergieeinsatz). 
+2. Einsatz von Spitzenlast-Kesseln minimieren. Typischerweise verwenden diese Kessel fossilen Brennstoffen, während der Haupt-Kessel erneuerbare Energien verwendet.  
 
 [EN] 
-1) Minimize the energy consumption of disctrict heating netowrks (primary energy use)
-2) Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
+
+1. Minimize the energy consumption of disctrict heating netowrks (primary energy use)
+2. Minimize the use of peak load boilers. These boilers typically use fossil fuels, while the main boiler uses an renewable energy source.
 
 ## Hintergrund - Big Picture:
 
 [DE] 
 
 Fernwärmeverbünde auf Basis erneuerbarer Energien sind ein wesentlicher Bestandteil der Energiestrategie 2050. Ressourceneffizienz ist ein Hauptthema und soll im Rahmen der Optimierung bestehender Fernwärmeverbünde mittels Datenanalyse im Mittelpunkt stehen.
+
 Die AEW als Betreiber von mehr als 80 Fernwärmeverbünden sieht durch diese Challenge eine sehr gute Möglichkeit der Replizierbarkeit.
 
 [EN] 
@@ -33,40 +27,43 @@ AEW as operator of more than 80 district heating networks sees a very good oppor
 
 ## Idee - Idea
 [DE]
-* Lastprognosen auf Basis von historischen Verbrauchsdaten, Wetterdaten, etc projizieren.
-* Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
+
+- Lastprognosen auf Basis von historischen Verbrauchsdaten, Wetterdaten, etc projizieren.
+- Leistungs-Scheduling innerhalb des Verbundes unter Ausnutzung der thermischen Masse der belieferten Objekte oder Einsatz von verteilten kleineren Zwischenspeichern.
 
 [EN]
-* Load forecasts based on historical consumption data, weather data, etc.
-* Performance scheduling within the network by exploiting the thermal mass of the supplied objects or using distributed smaller intermediate storage facilities.
 
-## Daten
+- Load forecasts based on historical consumption data, weather data, etc.
+- Performance scheduling within the network by exploiting the thermal mass of the supplied objects or using distributed smaller intermediate storage facilities.
+
+## Daten - Data
+
 [DE]
 
-Gebraucht: 
-* Verbrauchs- und Erzeugungsdaten eines Dorf-Fernwärmenetzes mit 9 Abnehmern: https://github.com/district-heating-2020/data_analysis/tree/master/data/energy 
-* Historische Wetterdaten für die Region: https://github.com/district-heating-2020/data_analysis/tree/master/data/weather
+- [Verbrauchs- und Erzeugungsdaten eines Dorf-Fernwärmenetzes mit 9 Abnehmern](https://github.com/district-heating-2020/data_analysis/tree/master/data/energy): 2 Jahren (2018-2019), alle 5 Minuten
+- [Historische Wetterdaten für die Region](https://github.com/district-heating-2020/data_analysis/tree/master/data/weather)
 
-Potentiell: 
-* Kalenderdaten (Feiertage, Ferienzeit, …)
-* Kenndaten/Modelldaten Fernwärmesysteme
-* Geodaten (Fernwärmenetz, Wärmebedarf, Wärmequelle, …)
-* HSLU Programm "Thermische Netze" (https://www.energieschweiz.ch/page/de-ch/thermische-netze)
+[EN] 
 
-[EN]
+- [Production and usage data of an existing distric heating network for 9 client buildings](https://github.com/district-heating-2020/data_analysis/tree/master/data/energy): 2 years (2018-2019), every 5 minutes 
+- [Historical weather data for the area](https://github.com/district-heating-2020/data_analysis/tree/master/data/weather)
 
-Used: 
+### Weitere potentielle Datenquellen
+- Kalenderdaten (Feiertage, Ferienzeit, …)
+- Kenndaten/Modelldaten Fernwärmesysteme
+- Geodaten (Fernwärmenetz, Wärmebedarf, Wärmequelle, …)
+- [HSLU Programm "Thermische Netze"](https://www.energieschweiz.ch/page/de-ch/thermische-netze): seems relevant, but is out of date
+- [Statistics from Germany](https://de.statista.com/statistik/daten/studie/166824/umfrage/verbrauch-von-fernwaerme-in-deutschland/)
 
-- Production and usage data of an existing distric heating network for 9 client buildings  
-- Historical weather data for the area
+## Team
 
-Potentially useful: 
+- Toni Wietlisbach, AEW --> Fernwärme
+- [Andy Gubser](https://github.com/andygubser) --> Data science
+- [Martin Horeni](https://github.com/Martin1877) --> Data Science
+- Wolfram Willuhn
+- [Emilie Boillat](https://github.com/boillat) --> Dokumentation
 
-- Calender data (Holidays, …)
-- Modell Data of existing distric heating systems
-- Geodata (Heating networks, heat needs, Sources, …)
-- HSLU Programm "Thermische Netze" (https://www.energieschweiz.ch/page/de-ch/thermische-netze)
-
+Dieses Projekt wurde im Rahmen der [Energy Hack Days 2020](https://hack.opendata.ch/event/31) lanciert. 
 
 ## Anforderungen
 
