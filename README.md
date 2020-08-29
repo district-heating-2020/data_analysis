@@ -100,11 +100,11 @@ Ein Fernwärmeerzeuger kann an wenige bis zu 1000 Gebäude Wärme verteilen, je 
 
 In unserem Data Sample geht es um ein Dorf-Fernwärmeverbund mit 9 Kunden (darunter Gewerbe, Schulhaus, Gemeindehaus).
 
-![Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Fernleitungsplan-Auszug.png?raw=true)
+![Fernleitungs-Plan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/Fernleitungsplan-Auszug.png?raw=true)
 
 #### Heizzentrale
 
-![Heizzentrale](https://github.com/district-heating-2020/data_analysis/blob/master/doc/Heat-station.png?raw=true)
+![Heizzentrale](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/Heat-station.png?raw=true)
 
 * Der Holzkessel produziert in der Regel die Wärme (kann auf ca 30%-100% seiner Kapazität laufen oder ausgeschaltet sein)
 * Die zwei Gaskessel werden bei Bedarf eingeschlatet um eine Spitzenlast zu decken. Sie dienen auch als Redundanz, sollte der Holzkessel ausfallen. 
@@ -125,18 +125,17 @@ Zur Zeit steuert das Leitsystem die Kessel und den Speicher aufgrund der momenta
 
 Beispielsweise kann es in der Übergangszeit zu suboptimalen Spitzen kommen: am Nachmittag scheint die Sonne und der Holzkessel ist ausgeschaltet; der Speicher reicht nicht mehr um die kalte Nacht zu decken. Der Gaskessel wird eingeschlatet, obwohl der Holzkessel alleine hätte locker reichen können, wenn nachmittags mehr gespeichert worden wäre. 
 
-**Faktoren hinter den Wärme-Bedarf**
 
-* Aussentemperatur
-* Zeiten, an denen die individuellen Boiler der Kunden angestellt werden. Normalerweise regelmässig. Kann man bedingt beinflussen mit Fernsteuerung. 
-* Globale Strahlung (Erwärmung durch Fenster) --> ?
-* Wind (kühlt ab) --> ?
-* Luftfeuchtigkeit --> ?
-* Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung.  
+![Holzkessel](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/Holzkessel_400px.JPG?raw=true)
+![Speicher](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/Speicher_400px.JPG?raw=true)
+![Wärmeübergabestation (gross)](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/W%C3%A4rme%C3%BCbergabestation_gross_400px.jpg?raw=true)
+![Wärmeübergabestation (klein)](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/W%C3%A4rme%C3%BCbergabestation_klein_400px.jpg?raw=true)
+
+Von links nach rechts: Holzkessel, Speicher, 
 
 #### Kunden
 
-![Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/W%C3%A4rmeverbund-Netzplan.png?raw=true)
+![Wärmeverbund-Netzplan](https://github.com/district-heating-2020/data_analysis/blob/master/doc/pictures/W%C3%A4rmeverbund-Netzplan.png?raw=true)
 
 Auf dem Netzplan wird pro Kunde die maximale Leistung (in kW) angegeben.
 
@@ -151,6 +150,16 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 - Kunde Nr 7: Gewerbe (Büro)
 - Kunde Nr 8: Gewerbe
 - Kunde Nr 9: Gewerbe
+
+**Faktoren hinter den Wärme-Bedarf**
+
+* Aussentemperatur
+* Zeiten, an denen die individuellen Boiler der Kunden angestellt werden. Normalerweise regelmässig. Kann man bedingt beinflussen mit Fernsteuerung. 
+* Globale Strahlung (Erwärmung durch Fenster)
+* Wind (kühlt ab) 
+* Luftfeuchtigkeit 
+* Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung.  
+
 
 Wärmetauscher = Schnittstelle zwischen Netz und Kunden-Gebäude. Beide sind geschlossene Kreise
 
