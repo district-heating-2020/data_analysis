@@ -49,10 +49,27 @@ und weiteren relevanten Parametern".
 
 Detailliert: 
 
-1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte. 
-2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann. 
-3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle
-4. Als Data Scientist will ich die fixe Betriebszeiten von Kunden-Boilers aus Verbrauchsdaten erkennen, damit ich diesen Input der Leistungs-Prognose hinzufügen kann
+*1. Als AEW möchten wir wissen, wieviel kW/h an Gaskessel-produzierte Wärme wir pro Jahr durch die Leistungsprognose hätten sparen können, um zu entscheiden ob es einen bedeutenden Einfluss auf die Klimaziele hätte.*
+
+--> TO DO
+
+*2. Als Betriebsingenieur brauche ich eine Prognose der benötigten Gesamtleistung (in kW) für jede Stunde der nächsten 24h, damit ich sie visualisieren kann.* 
+
+--> IN PROGRESS: Ansätze und erste Prognosen DONE, Optimierung und Komplettierung relevante Input-Variablen TO DO
+
+*3. Als Data Scientist will ich wissen, welche Wetter-Faktoren aufgrund der historischen Daten die benötigte Gesamtleistung (in kW) beteutend beinflussen (z.B. neben der Aussentemperatur auch die globale Strahlung, Windstärke, Luftfeuchtigkeit,...), damit ich die richtigen Input-Daten für die Prognose wähle*
+
+--> IN PROGRESS
+
+*4. Als Data Scientist will ich die fixe Betriebszeiten von Kunden-Boilers aus Verbrauchsdaten erkennen, damit ich diesen Input der Leistungs-Prognose hinzufügen kann*
+
+--> DONE:  Included in load forecast
+
+
+#### Results
+
+Download the [final presentation (pptx)](https://github.com/district-heating-2020/data_analysis/commits/master/pitch/01%20pitch%20rev00.pptx?raw=true) for an overview of the results achieved.  
+
 
 #### Datenquellen - Data sources
 
@@ -71,6 +88,7 @@ Detailliert:
 - Toni Wietlisbach, AEW --> Fernwärme
 - [Andy Gubser](https://github.com/andygubser) --> Data science
 - [Martin Horeni](https://github.com/Martin1877) --> Data Science
+- [Marvin Grass](https://github.com/anywherealocal) --> Data Science
 - Wolfram Willuhn
 - [Emilie Boillat](https://github.com/boillat) --> Dokumentation
 
@@ -158,9 +176,5 @@ Im Mittelland bedeutet diese maximale Leistung: wieviel Energie braucht es, um d
 * Globale Strahlung (Erwärmung durch Fenster)
 * Wind (kühlt ab) 
 * Luftfeuchtigkeit 
-* Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung.  
-
-
-Wärmetauscher = Schnittstelle zwischen Netz und Kunden-Gebäude. Beide sind geschlossene Kreise
-
-Spreizung = Temperaturunterschied zwischen den Fluss beim Eingang bzw. Ausgang. Diesen Wert probiert man möglichst gross zu halten. 
+* Industrie-Gebäude abkoppeln: Bei einer Störung kann der Kunde Nr. 6 abgekoppelt werden (eigene Ölheizung vorhanden). Von der Ökobilanz her sind die Gaskessel aber klar besser als die individuelle Ölheizung. 
+ 
