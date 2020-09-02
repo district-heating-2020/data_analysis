@@ -68,7 +68,7 @@ Detailliert:
 
 #### Results
 
-Download the [final presentation (pptx)](https://github.com/district-heating-2020/data_analysis/commits/master/pitch/01%20pitch%20rev00.pptx?raw=true) for an overview of the results achieved.  
+Download the [final presentation (pptx)](https://github.com/district-heating-2020/data_analysis/blob/master/pitch/01%20pitch%20rev01.pdf?raw=true) for an overview of the results achieved.  
 
 
 #### Datenquellen - Data sources
